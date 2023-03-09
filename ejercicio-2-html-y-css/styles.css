@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .form {
-  width: 100%;
+  width: 250px;
   height: 300px;
   padding: 20px;
   border-radius: 25px;
@@ -14,23 +14,29 @@
   margin-top: 100px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.h3 {
+.form-title {
   color: white;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
 }
-.h4 {
+.cell-field-id {
   color: white;
   font-size: 15px;
   margin-top: 10px;
 }
-.p {
+#fields {
+  width: 100%;
+}
+#selector {
+  width: 100%;
+}
+.check-box {
   color: white;
   font-size: 13px;
 }
 
-.boton {
-  margin-left: 130px;
+#button {
+  margin-left: 140px;
   margin-top: 20px;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
@@ -40,6 +46,19 @@
 
 @media (min-width: 500px) {
   .form {
-    width: 250px;
+    width: 100%;
+  }
+  .form-title {
+    text-align: center;
+  }
+  #fields {
+    width: 100%;
+  }
+  #selector {
+    width: 100%;
+  }
+  #button {
+    margin-left: 5px;
+    width: 100%;
   }
 }

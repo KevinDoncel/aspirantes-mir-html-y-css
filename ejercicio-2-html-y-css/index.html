@@ -8,25 +8,49 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form class="form">
-      <h3 class="h3">Login</h3>
-      <h4 class="h4">Email</h4>
-      <input type="email" />
-      <h4 class="h4">Password</h4>
-      <input type="password" />
-      <h4 class="h4">Género</h4>
-      <select>
-        <option value="Hombre">Hombre</option>
-        <option value="Mujer">Mujer</option>
-        <option value="Otro">Otro</option>
-      </select>
-      <br />
-      <br />
-      <div class="p">
-        <input type="checkbox" />
-        <label for="">Acepto los términos</label>
-      </div>
-      <input class="boton" type="button" value="Ingresar" />
-    </form>
+    <div>
+      <form class="form">
+        <div class="form-title">
+          <label for="formtitle"> <strong>Login</strong> </label>
+        </div>
+        <div class="cell-field-id">
+          <label for="email"> <strong>Email</strong> </label>
+          <br />
+          <input
+            id="fields"
+            type="email"
+            name="email"
+            placeholder="tucorreo@example.com"
+          />
+        </div>
+        <div class="cell-field-id">
+          <label for="password"> <strong>Password</strong> </label>
+          <br />
+          <input
+            id="fields"
+            type="password"
+            name="password"
+            placeholder="Escribe tu contraseña aquí"
+          />
+        </div>
+        <div class="cell-field-id">
+          <label for="genero"> <strong>Género</strong> </label>
+          <br />
+          <select id="selector" name="genero" value="genero">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <br />
+        <div class="check-box">
+          <input type="checkbox" />
+          <label for="checkbox-sentence"> <em>Acepto los términos</em></label>
+        </div>
+        <div>
+          <input id="button" type="button" value="Ingresar" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
